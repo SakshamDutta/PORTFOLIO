@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CONTACT</title>
+    <link rel="icon" href="images/logo.jpg" >
+</head>
+ <!---- INTERNAL CSS FOR CONTACT ME PAGE ---->
+<style>
+   body{
+    background: url('images/cloudsvector.jpg');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+   }
+   form{
+    margin-top: 30px;
+    justify-content: center;
+      align-items: center;
+      text-align: center; 
+      margin-left: auto;
+     margin-right: auto;
+    display: inline-block;
+   }
+   table,tr,td{
+    padding:5px;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+   }
+   input{
+     border-radius: 5px;
+    }
+    button{
+    border-radius: 3px;
+    }
+   
+</style>
+<body>
+    
+    <h1>FILL YOUR DETAILS</h1>
+    <form   class="abc" action="#" onsubmit="return validation()">
+        <table> 
+            <tr>
+                <td>
+                    <label for="fname">NAME</label>
+                </td>
+                <td>
+                     <input type="text"  placeholder="Enter Your Name Here" id="user" autocomplete="off"><span id="username"></span>
+                </td>
+   
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="abc">MALE</input> <input type="radio" name="abc">FEMALE</input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" id="email" ><span id="email1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Mobile No">Number</label>
+                </td>
+                <td>
+                    <input type="text" maxlength="10" id="number" ><span id="numb"></span>
+                </td>
+            <tr>
+                <td>Comments</td>
+                <td><textarea name="abc" cols="25" rows="10" id="comments" ></textarea><span id="cmt"></span></td>
+            </tr>
+            <tr>
+                <td></td>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+            </tr>
+        </table>
+    </form>
+</div>
+  <!---- EXTERNAL LINK FOR JS---->
+<script src="script.js"></script>
+</body>
+
+</html>
